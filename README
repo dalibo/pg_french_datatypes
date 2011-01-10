@@ -1,0 +1,12 @@
+French-specific datatypes for PostgeSQL
+==========================================
+
+This small projects aims at including french-centric data type, such as :
+
+* "code_postal_fr" : a domain for French zip codes. 
+* "numero_securite_sociale_fr" : a domain for the French Social Services ID 
+
+This extension also includes two enums :
+
+* "jour" containing the french names of the days of week
+* "mois" containing the french names of the months.
