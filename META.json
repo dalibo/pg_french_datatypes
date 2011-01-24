@@ -1,0 +1,12 @@
+{
+   "name": "pg_french_datatypes",
+   "abstract": "french-centric data type",
+   "version": "0.1.0",
+   "maintainer": "Damien Clochard <damien.clochard@dalibo.com>",
+   "license": "postgresql",
+   "meta-spec": {
+      "version": "1.0.0",
+      "url": "http://pgxn.org/meta/spec.txt"
+   },
+}
+
