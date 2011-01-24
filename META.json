@@ -4,8 +4,8 @@
    "version": "0.1.0",
    "maintainer": "Damien Clochard <damien.clochard@dalibo.com>",
    "license": "postgresql",
-   "meta-spec": "{
+   "meta-spec": {
       "version": "1.0.0",
       "url": "http://pgxn.org/meta/spec.txt"
-   }"
+   }
 }
