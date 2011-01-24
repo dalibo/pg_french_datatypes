@@ -1,0 +1,18 @@
+\set ECHO 0
+CREATE TABLE test_pg_french_datatypes (
+	c code_postal_fr,
+	j jour,
+	m mois,
+	n numero_securite_sociale_fr
+);
+INSERT INTO test_pg_french_datatypes("c") 
+VALUES (87120);
+INSERT INTO test_pg_french_datatypes("c")
+VALUES (75000000);
+ERROR:  value for domain code_postal_fr violates check constraint "code_postal_fr_check"
+INSERT INTO test_pg_french_datatypes("n")
+VALUES ('253072B07300483');
+INSERT INTO test_pg_french_datatypes("n")
+VALUES ('25307200730A483');
+ERROR:  value for domain numero_securite_sociale_fr violates check constraint "numero_securite_sociale_fr_check"
+DROP TABLE test_pg_french_datatypes;
