@@ -1,7 +1,7 @@
 {
    "name": "pg_french_datatypes",
    "abstract": "french-centric data type",
-   "version": "0.1.0",
+   "version": "0.1.1",
    "maintainer": "Damien Clochard <damien.clochard@dalibo.com>",
    "license": "postgresql",
    "tags" : [ 
