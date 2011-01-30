@@ -10,3 +10,35 @@ This extension also includes two enums :
 
 * "jour" containing the french names of the days of week
 * "mois" containing the french names of the months.
+
+
+==== Install ====
+
+You can install the data type using the following
+
+make 
+make install
+make installcheck
+
+
+or simply add it to your database.
+For example, if your database is called foo :
+
+sudo su - postgres
+psql foo -f sql/pg_french_datatypes.sql
+
+
+The new data types will available in the public schema : 
+
+
+$ psql foo -c "\dT";
+ Schema |            Name             | Description 
+--------+----------------------------+-------------
+ public | code_postal_fr             | 
+ public | jour                       | 
+ public | mois                       | 
+ public | numero_securite_sociale_fr | 
+(4 lines)
+
+
+
